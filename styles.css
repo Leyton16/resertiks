@@ -4,4 +4,20 @@ display:block;
 background:#FFF;
 color:#000;
 border:solid #999 1px;
+padding-top:1px;
+padding-left:10px;
+padding-right:10px;
+text-align:justify;
+width:100vh;
+font-size:12px;
+font-family:"Comic Sans MS", cursive;
+}
+.footer{
+font-size:12px;
+font-family:"Comic Sans MS", cursive;
+}
+.cabecera{
+font-size:18px;
+font-family:"Comic Sans MS", cursive;
+text-align:center;	
 }
