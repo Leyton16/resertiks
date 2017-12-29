@@ -14,15 +14,19 @@ font-family:Arial, Helvetica, sans-serif;
 .footer{
 font-size:12px;
 font-family:"Times New Roman", Times, serif;
-background-image:-webkit-gradient(linear,left top,left bottom,from(#F1C40F),to(#F39C12));
+background-image:-webkit-gradient(linear,left top,left bottom,from(#0287D0),to(#0057A0));
+border:#0077C0 1px solid;
 }
 .cabecera{
 font-size:18px;
 font-family:"Times New Roman", Times, serif;
 text-align:center;
-background-image:-webkit-gradient(linear,left top,left bottom,from(#F39C12),to(#F1C40F));
+background-image:-webkit-gradient(linear,left top,left bottom,from(#0057A0),to(#0287D0));
 display:block;
 height:auto;
 width:auto;
-border:#F1C40F 1px solid;
+border:#0077C0 1px solid;
+}
+a{
+text-decoration:none;
 }
