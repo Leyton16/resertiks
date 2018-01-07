@@ -12,7 +12,7 @@
 
 <div data-role="page" id="page">
 	<div data-role="header" class="cabecera">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<table width="100%" height="85px" border="0" cellpadding="0" cellspacing="0">
   <tr align="center">
     <td align="left"><img src="ic_menu.png"></td>
     <td align="center"><img src="logoswe.png" width="192px" height="80px"></td>
@@ -21,8 +21,6 @@
 </table>
 	</div>
 	<div data-role="content">
-    <font face="Times New Roman, Times, serif" size="+2"><p align="center">Inicio</p></font>
-    <hr>	
 		<div class="contenido">
         <p>hola que hace</p>
         </div>		
@@ -50,11 +48,11 @@
 
 <div data-role="page" id="page2">
 	<div data-role="header" class="cabecera">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<table width="100%"  height="85px" border="0" cellpadding="0" cellspacing="0">
   <tr align="center">
     <td align="left"><img src="ic_menu.png"></td>
-    <td align="center"><img src="logoswe.png" width="192px" height="80px"></td>
-    <td align="right"><a href="#page2"><img src="ic_siguiente.png"></a></td>
+    <td align="center"><h3>Reserva tu boleto, ahora!</h3></td>
+    <td align="right"><a href="#page3"><img src="ic_siguiente.png"></a></td>
   </tr>
 </table>
 	</div>
@@ -86,25 +84,20 @@
 
 <div data-role="page" id="page3">
 	<div data-role="header" class="cabecera">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<table width="100%" height="85px" border="0" cellpadding="0" cellspacing="0">
   <tr align="center">
     <td align="left"><img src="ic_menu.png"></td>
-    <td align="center"><img src="logoswe.png" width="192px" height="80px"></td>
-    <td align="right"><a href="#page2"><img src="ic_siguiente.png"></a></td>
+    <td align="center"><h3>Mis Viajes</h3></td>
+    <td align="right"><a href="#page4"><img src="ic_siguiente.png"></a></td>
   </tr>
 </table>
 	</div>
 	<div data-role="content">	
-		<div class="contenido"><p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​
-
-En 1957, Karl Steinbuch añadió la palabra alemana Informatik en la publicación de un documento denominado Informatik: Automatische Informationsverarbeitung (Informática: procesamiento automático de información).5​ El soviético Alexander Ivanovich Mikhailov fue el primero en utilizar Informatik con el significado de «estudio, organización, y diseminación de la información científica», que sigue siendo su significado en dicha lengua.5​ En inglés, la palabra informatics fue acuñada independiente y casi simultáneamente por Walter F. Bauer, en 1962, cuando Bauer cofundó la empresa Informatics General, Inc.5​</p>
+		<div class="contenido">
+        <strong><font color="#C72C1C" face="Times New Roman, Times, serif" size="+1"><p align="center">No se encontraron viajes.</p></font></strong>
+        <p align="center"><img src="error_icono.png" height="110px" width="130px;"></p>
+        <font color="#000000" face="Times New Roman, Times, serif"><p align="center">Por favor, inicia sesion para ver tus reservaciones.</p></font>
+        <center><a href="#ingresar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_ing">Ingresar</a></center>
         </div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
@@ -128,13 +121,71 @@ En 1957, Karl Steinbuch añadió la palabra alemana Informatik en la publicació
 	</div>
 </div>
 
+<!--Cuadro de dialogo ingresar-->
+<div data-role="page" id="ingresar">
+	<!--Header-->
+	<div data-role="header" class="cabecera_ingre" data-icon="delete">
+		<table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+  <tr>
+    <td align="center"><a href="#page3"><img src="ic_volver.png"></a></td>
+    <td align="center"><h3>Iniciar sesión / Registrarse</h3></td>
+  </tr>
+</table>
+	</div>
+	<div data-role="content">
+    	<font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
+        <form action="" method="">
+        <input type="email" name="names" id="names" placeholder="Correo electrónico">
+        <input type="password" name="names" id="names" placeholder="Contraseña">
+        </form>
+        <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+  <tr>
+    <td align="center"><a href="" data-role="button" class="btn_ini">Iniciar sesión</a></td>
+    <td align="center"><a href="#registrar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_reg">Regístrarse</a></td>
+  </tr>
+</table>
+
+        
+        </div>		
+	</div>
+<!--Fin del cuadro de dialog.-->
+
+<!--Cuadro de dialogo registro-->
+<div data-role="page" id="registrar">
+	<!--Header-->
+	<div data-role="header" class="cabecera_ingre">
+		<table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+  <tr>
+    <td align="center"><a href="#page3"><img src="ic_salir.png"></a></td>
+    <td align="center"><h3>Registrarse</h3></td>
+  </tr>
+</table>
+	</div>
+	<div data-role="content">
+    	<font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
+        <form action="" method="">
+        <input type="email" name="names" id="names" placeholder="Correo electrónico">
+        <input type="password" name="names" id="names" placeholder="Contraseña">
+        </form>
+        <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+  <tr>
+    <td align="center"><a href="" data-role="button" class="btn_reg">Regístrarse</a></td>
+    <td align="center"><a href="#ingresar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_cancelar">Cancelar</a></td>
+  </tr>
+</table>
+
+        
+        </div>		
+	</div>
+<!--Fin del cuadro de dialog.-->
+
 <div data-role="page" id="page4">
 	<div data-role="header" class="cabecera">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<table width="100%"  height="85px" border="0" cellpadding="0" cellspacing="0">
   <tr align="center">
     <td align="left"><img src="ic_menu.png"></td>
-    <td align="center"><img src="logoswe.png" width="192px" height="80px"></td>
-    <td align="right"><a href="#page2"><img src="ic_siguiente.png"></a></td>
+    <td align="center"><h3>Mi Cuenta</h3></td>
+    <td align="right"><a href="#page5"><img src="ic_siguiente.png"></a></td>
   </tr>
 </table>
 	</div>
@@ -174,11 +225,11 @@ En 1957, Karl Steinbuch añadió la palabra alemana Informatik en la publicació
 
 <div data-role="page" id="page5">
 	<div data-role="header" class="cabecera">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<table width="100%" height="85px" border="0" cellpadding="0" cellspacing="0">
   <tr align="center">
     <td align="left"><img src="ic_menu.png"></td>
-    <td align="center"><img src="logoswe.png" width="192px" height="80px"></td>
-    <td align="right"><a href="#page2"><img src="ic_siguiente.png"></a></td>
+    <td align="center"><h3>Información</h3></td>
+    <td align="right"><a href="#page"><img src="ic_siguiente.png"></a></td>
   </tr>
 </table>
 	</div>

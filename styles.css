@@ -4,12 +4,14 @@ display:block;
 background:#FFF;
 color:#000;
 border:solid #999 1px;
-padding-top:1px;
+padding-top:0px;
 padding-left:10px;
 padding-right:10px;
 text-align:justify;
 font-size:16px;
 font-family:Arial, Helvetica, sans-serif;
+width:auto;
+height:100%;
 }
 .footer{
 font-size:12px;
@@ -32,4 +34,42 @@ text-decoration:none;
 }
 .opa{
 opacity:0.6;
+}
+.cabecera_ingre{
+font-size:18px;
+font-family:"Times New Roman", Times, serif;
+text-align:center;
+background-image:-webkit-gradient(linear,left top,left bottom,from(#0057A0),to(#0287D0));
+display:block;
+height:auto;
+width:auto;
+border:#0067B0 1px solid;
+}
+.btn_reg{
+font-family:"Times New Roman", Times, serif;
+background-image:-webkit-gradient(linear,left top,left bottom,from(#D73C2C),to(#E74C3C));
+border:#C72C1C 1px solid;
+width:160px;
+color:#fff;
+font-size:18px;
+text-shadow:none;
+}
+.btn_ini{
+font-family:"Times New Roman", Times, serif;
+background-image:-webkit-gradient(linear,left top,left bottom,from(#009C41),to(#0EAC51));
+border:#008C31 1px solid;
+width:160px;
+color:#FFF;
+font-size:18px;
+text-shadow:none;
+}
+.btn_ing{
+font-family:"Times New Roman", Times, serif;
+background-image:-webkit-gradient(linear,left top,left bottom,from(#D73C2C),to(#E74C3C));
+border:#C72C1C 1px solid;
+width:160px;
+color:#FFF;
+font-size:18px;
+text-shadow:none;
+border-radius:0px;
 }
