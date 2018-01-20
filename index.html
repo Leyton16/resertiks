@@ -58,8 +58,59 @@
 	</div>
 	<div data-role="content">	
 		<div class="contenido">
-        
-        </div>		
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="70px">Desde</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="ic_cdad.png"></td>
+    <td><select name="cdad_orige" id="cdad_orige">
+    <option>Ciudad de origen</option>
+    <option>Guaranda</option>
+    </select></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="90%"><hr></td>
+    <td align="center"><img src="ic_flec.png"></td>
+    <td width="20%"><hr></td>
+  </tr>
+</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="70px">A</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="ic_cdad.png"></td>
+    <td><select name="cdad_dest" id="cdad_dest">
+    <option>Ingrese su destino</option>
+    <option>Ambato</option>
+    <option>Babahoyo</option>
+    <option>Chillanes</option>
+    <option>Riobamba</option>
+    </select></td>
+  </tr>
+</table>
+        </div><br>
+        <div class="contenido">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100px">Fecha de viaje</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="ic_cale.png"></td>
+    <td><input type="date"></td>
+  </tr>
+</table>
+</div>
+<div>
+<button type="submit" name="sig" id="sig" data-theme="e">Siguiente</button>
+</div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
 		<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="footer">
@@ -134,18 +185,17 @@
 	</div>
 	<div data-role="content">
     	<font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
-        <form action="" method="">
-        <input type="email" name="names" id="names" placeholder="Correo electrónico">
-        <input type="password" name="names" id="names" placeholder="Contraseña">
-        </form>
+        <form action="login.php" method="post" data-ajax="false">
+        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+        <input type="password" name="pass" id="pass" placeholder="Contraseña">
         <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
   <tr>
-    <td align="center"><a href="" data-role="button" class="btn_ini">Iniciar sesión</a></td>
+    <td align="center"><input type="submit" value="Iniciar sesión" data-theme="b" size="auto"></td>
     <td align="center"><a href="#registrar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_reg">Regístrarse</a></td>
   </tr>
 </table>
-
-        
+        </form>
+               
         </div>		
 	</div>
 <!--Fin del cuadro de dialog.-->
@@ -170,7 +220,7 @@
         <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
   <tr>
     <td align="center"><a href="" data-role="button" class="btn_reg">Regístrarse</a></td>
-    <td align="center"><a href="#ingresar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_cancelar">Cancelar</a></td>
+    <td align="center"><a href="#ingresar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_cancelar" data-theme="e">Cancelar</a></td>
   </tr>
 </table>
 
