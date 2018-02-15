@@ -51,6 +51,7 @@ font-family:"Times New Roman", Times, serif;
 background-image:-webkit-gradient(linear,left top,left bottom,from(#D73C2C),to(#E74C3C));
 border:#C72C1C 1px solid;
 width:auto;
+height:40px;
 color:#fff;
 font-size:18px;
 text-shadow:none;
@@ -79,10 +80,33 @@ text-shadow:none;
 border-radius:20px;
 }
 .btn_sig{
-background-position:bottom;
-background:#393;
-border-radius:15px;
-visibility:visible;
-border:#060 1px solid;
-bottom:none;
+
+}
+.labels{
+background:#FFF;
+font-family:"Times New Roman", Times, serif;
+border-radius:10px;
+border: #999 1px solid;
+padding:10px;
+text-align:center;
+width:auto;
+height:20px;
+}
+.slider{
+width:95%;
+margin:auto;
+overflow:hidden;
+}
+.slider ul{
+padding:0;	
+display:flex;
+width:100%;
+animation: cambio 20s infinite;
+}
+.slider li{
+list-style:none;
+width:100%;
+}
+.slider img{
+width:100%;
 }

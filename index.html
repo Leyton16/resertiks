@@ -22,7 +22,61 @@
 	</div>
 	<div data-role="content">
 		<div class="contenido">
-        <p>hola que hace</p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><h1>Busca tu pasaje de bus en Ecuador!</h1></td>
+  </tr>
+  <tr>
+    <td align="center">
+    <div class="slider">
+    	<ul>
+        	<li><img src="ecu1.png" alt="" width="440px"></li>
+            <li><img src="ecu2.png" alt="" width="440px"></li>
+            <li><img src="ecu3.png" alt="" width="440px"></li>
+            <li><img src="ecu4.png" alt="" width="440px"></li>
+        </ul>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><h1>Rutas más buscadas</h1>
+<font color="#6699CC" size="+1"><p>Nuestros clientes están viajando en estas rutas</p></font></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Babahoyo.png"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="domingo.png"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="guayaquil.png"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="quito.png"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="riobamba.png"></td>
+  </tr>
+  <tr>
+    <td align="center"><h1>Lo bueno de comprar en Multipasajes</h1></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img src="celular.png" width="50px"></td>
+    <td align="center"><img src="like.png" width="50px"></td>
+    <td align="center"><img src="reloj.png" width="50px"></td>
+    <td align="center"><img src="seguro.png" width="50px"></td>
+  </tr>
+  <tr>
+    <td align="center"><p>Compra desde la comodidad de tu casa u oficina</p></td>
+    <td align="center"><p>Olvidate de hacer largas filas para comprar</p></td>
+    <td align="center"><p>Pasajes disponibles 24 horas al día, 7 días de la semana</p></td>
+    <td align="center"><p>Compra tus pasajes rápido y seguro</p></td>
+  </tr>
+</table>
+
+
         </div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
@@ -60,7 +114,7 @@
 		<div class="contenido">
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="70px">Desde</td>
+    <td width="70px"><font size="-1">Desde</font></td>
     <td></td>
   </tr>
   <tr>
@@ -81,17 +135,21 @@
 
 		<table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="70px">A</td>
+    <td width="70px"><font size="-1">A</font></td>
     <td></td>
   </tr>
   <tr>
     <td align="center"><img src="ic_cdad.png"></td>
     <td><select name="cdad_dest" id="cdad_dest">
     <option>Ingrese su destino</option>
-    <option>Ambato</option>
-    <option>Babahoyo</option>
-    <option>Chillanes</option>
+    <option>Guayaquil</option>
+    <option>Quito</option>
+    <option>Santo Domingo</option>
+    <option>Caluma</option>
+    <option>San Luis</option>
     <option>Riobamba</option>
+    <option>Chillanes</option>
+    <option>Babahoyo</option>
     </select></td>
   </tr>
 </table>
@@ -99,7 +157,7 @@
         <div class="contenido">
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="100px">Fecha de viaje</td>
+    <td width="100px"><font size="-1">Fecha de viaje</font></td>
     <td></td>
   </tr>
   <tr>
@@ -107,9 +165,13 @@
     <td><input type="date"></td>
   </tr>
 </table>
-</div>
+</div><br>
 <div>
-<button type="submit" name="sig" id="sig" data-theme="e">Siguiente</button>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="25px">
+  <tr>
+    <td align="center"><button type="submit" name="sig" id="sig" data-theme="e">Siguiente</button></td>
+  </tr>
+</table>
 </div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
@@ -186,8 +248,8 @@
 	<div data-role="content">
     	<font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
         <form action="login.php" method="post" data-ajax="false">
-        <input type="email" name="email" id="email" placeholder="Correo electrónico">
-        <input type="password" name="pass" id="pass" placeholder="Contraseña">
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" class="labels"><br>
+        <input type="password" name="pass" id="pass" placeholder="Contraseña" class="labels"><br>
         <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
   <tr>
     <td align="center"><input type="submit" value="Iniciar sesión" data-theme="b" size="auto"></td>
@@ -212,19 +274,26 @@
 </table>
 	</div>
 	<div data-role="content">
-    	<font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
-        <form action="" method="">
-        <input type="email" name="names" id="names" placeholder="Correo electrónico">
-        <input type="password" name="names" id="names" placeholder="Contraseña">
+    	<div id="msm"></div>
+        <form id="formu">
+        <!-- <form method="POST" id="form" data-ajax="false"> -->
+        <font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
+        <input type="text" name="cod_ci" id="cod_ci" placeholder="Número de cedula" class="labels"><br>
+        <input type="text" name="names" id="names" placeholder="Nombres" class="labels"><br>
+        <input type="text" name="lastnames" id="lastnames" placeholder="Apellidos" class="labels"><br>
+        <input type="text" name="num_cellphone" id="num_cellphone" placeholder="Número de teléfono" class="labels"><br>
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" class="labels"><br>
+        <input type="password" name="pass" id="pass" placeholder="Contraseña" class="labels"><br>
+        <input type="text" name="txtFoto" id="txtFoto" placeholder="Ingresar foto">
+        <button id="btnAgregar" type="submit">Agregar</button>
+        <!-- <input type="submit" id="btnAgregar" value="Agregar"> -->
         </form>
         <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
   <tr>
     <td align="center"><a href="" data-role="button" class="btn_reg">Regístrarse</a></td>
     <td align="center"><a href="#ingresar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_cancelar" data-theme="e">Cancelar</a></td>
   </tr>
-</table>
-
-        
+</table>     
         </div>		
 	</div>
 <!--Fin del cuadro de dialog.-->
@@ -240,16 +309,58 @@
 </table>
 	</div>
 	<div data-role="content">	
-		<div class="contenido"><p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​
+		<div class="contenido">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><font color="#0000">INFORMACIÓN PERSONAL</font></td>
+    <td><a href="">EDITAR</a></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td></td>
+    <td>Nombre</td>
+  </tr>
+  <tr>
+    <td>img</td>
+    <td>Obtencion del nombre</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td></td>
+    <td>Edad</td>
+    <td>Género</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>18</td>
+    <td>radio</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td></td>
+    <td>Número de telefono</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>+pref</td>
+    <td>numero</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td></td>
+    <td>Email</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Correo</td>
+  </tr>
+</table>
 
-En 1957, Karl Steinbuch añadió la palabra alemana Informatik en la publicación de un documento denominado Informatik: Automatische Informationsverarbeitung (Informática: procesamiento automático de información).5​ El soviético Alexander Ivanovich Mikhailov fue el primero en utilizar Informatik con el significado de «estudio, organización, y diseminación de la información científica», que sigue siendo su significado en dicha lengua.5​ En inglés, la palabra informatics fue acuñada independiente y casi simultáneamente por Walter F. Bauer, en 1962, cuando Bauer cofundó la empresa Informatics General, Inc.5​</p>
         </div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
@@ -284,16 +395,8 @@ En 1957, Karl Steinbuch añadió la palabra alemana Informatik en la publicació
 </table>
 	</div>
 	<div data-role="content">	
-		<div class="contenido"><p>Contenidssdsdasdasdasdo</p>
-        <p>Contenidssdsdasdasdasdo</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​</p>
-        <p>CLa informática, también llamada computación,1​ es una ciencia que estudia métodos, técnicas, procesos, con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática, que se ha desarrollado rápidamente a partir de la segunda mitad del siglo XX con la aparición de tecnologías como el circuito integrado, el Internet y el teléfono móvil,2​ es la rama de la tecnología que estudia el tratamiento automático de la información.3​4​
-
-En 1957, Karl Steinbuch añadió la palabra alemana Informatik en la publicación de un documento denominado Informatik: Automatische Informationsverarbeitung (Informática: procesamiento automático de información).5​ El soviético Alexander Ivanovich Mikhailov fue el primero en utilizar Informatik con el significado de «estudio, organización, y diseminación de la información científica», que sigue siendo su significado en dicha lengua.5​ En inglés, la palabra informatics fue acuñada independiente y casi simultáneamente por Walter F. Bauer, en 1962, cuando Bauer cofundó la empresa Informatics General, Inc.5​</p>
+		<div class="contenido">
+        
         </div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
