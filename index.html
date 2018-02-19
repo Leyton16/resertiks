@@ -13,6 +13,21 @@ ry/1.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="https://raw.github.com/HPNeo/gmaps/master/gmaps.js"></script>
 
+<script type="text/javascript" src="jquery.nivo.slider.js"></script>
+<link rel="stylesheet" type="text/css" href="nivo-slider.css">
+<link rel="stylesheet" type="text/css" href="default.css">
+<link rel="stylesheet" type="text/css" href="light.css">
+<link rel="stylesheet" type="text/css" href="dark.css">
+<link rel="stylesheet" type="text/css" href="bar.css">
+
+<script type="text/javascript">
+	$(window).load(function(){
+		$('#slider').nivoSlider({
+			effect: 'fade'
+			});
+	});
+</script>
+
 <!--<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
 <link href="jquery.gmaps.css" rel="stylesheet"/>
 <script src="jquery.gmaps.js"></script>-->
@@ -102,12 +117,15 @@ width: 100%;
   <tr>
     <td align="center">
     <div class="main">
-		<div class="slides">
-			<img src="ecu4.png" alt="">
-			<img src="ecu3.png" alt="">
-			<img src="ecu2.png" alt="">
-            <img src="ecu1.png" alt="">
+    	<div class="slider-wrapper theme-default">
+		<div id="slider" class="nivoSlider">
+			<img src="ecu4.png" alt="Ecuador">
+			<img src="ecu3.png" alt="Ecuador">
+			<img src="ecu2.png" alt="Ecuador">
+            <img src="ecu1.png" alt="Ecuador">
 		</div>
+        
+        </div>
 	</div>
     </td>
   </tr>
