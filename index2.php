@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Aplic. Web de jQuery Mobile</title>
+<title>ReserTiks</title>
 <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
@@ -280,10 +280,24 @@ width: 100%;
 	</div>
 	<div data-role="content">	
 		<div class="contenido">
-        <strong><font color="#C72C1C" face="Times New Roman, Times, serif" size="+1"><p align="center">No se encontraron viajes.</p></font></strong>
-        <p align="center"><img src="error_icono.png" height="110px" width="130px;"></p>
-        <font color="#000000" face="Times New Roman, Times, serif"><p align="center">Por favor, inicia sesion para ver tus reservaciones.</p></font>
-        <center><a href="#ingresar" data-role="button" data-rel="dialog" data-transition="slidedown" class="btn_ing">Ingresar</a></center>
+        	<h2>Bienvenido: <?php echo $_SESSION['email']?></h2>
+        	<table width="100%">
+            	<tr>
+                	<td align="center" width="50%"><input type="button" name="realizado" id="realizado" value="REALIZADO"></td>
+                    <td align="center" width="50%"><input type="button" name="realizado" id="realizado" value="CANCELADO"></td>
+                </tr>
+            </table>
+            <table>
+            	<tr>
+                	<td></td>
+                </tr>
+                <tr>
+                	<td></td>
+                </tr>
+                <tr>
+                	<td></td>
+                </tr>
+            </table>
         </div>		
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="footer_fijo">
@@ -320,7 +334,7 @@ width: 100%;
 	</div>
 	<div data-role="content">
     	<font face="Times New Roman, Times, serif"><p>Inicia sesión o Regístrate gratis con <font color="#0067B0"><strong>ReserTiks</strong></font>.</p></font>	
-        <form action="login.php" method="post" >
+        <form action="login.php" method="post" data-ajax="false">
         <input type="email" name="email" id="email" placeholder="Correo electrónico" class="labels"><br>
         <input type="password" name="pass" id="pass" placeholder="Contraseña" class="labels"><br>
         <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
@@ -394,15 +408,14 @@ width: 100%;
 </table>
 
 
-
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td></td>
     <td>Nombre</td>
   </tr>
   <tr>
-    <td>img</td>
-    <td>Obtencion del nombre</td>
+    <td><?php $txtFoto=$_GET['txtFoto']; echo $txtFoto ?></td>
+    <td><?php $names=$_GET['names']; echo $names ?></td>
   </tr>
 </table>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -417,8 +430,8 @@ width: 100%;
   <table>
   <tr>
     <td></td>
-    <td width="50px">+pref</td>
-    <td>numero</td>
+    <td width="50px"></td>
+    <td><?php $num_cellphone=$_GET['num_cellphone']; echo $num_cellphone ?></td>
   </tr>
 </table>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -428,9 +441,14 @@ width: 100%;
   </tr>
   <tr>
     <td></td>
-    <td>Correo</td>
+    <td><?php $emaile=$_GET['email']; echo $email ?></td>
   </tr>
 </table>
+	<table width="100%">
+    	<tr>
+        	<td align="right"><a href="cerrar_sesion.php">Cerrar sesión</a></td>
+        </tr>
+    </table>
 
         </div>		
 	</div>
